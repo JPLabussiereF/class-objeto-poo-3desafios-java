@@ -20,13 +20,22 @@ public class Main {
 
 
         Account conta = new Account(1, cliente, 100);
-        Account conta2 = new Account(1, cliente2, 200);
+        Account conta2 = new Account(2, cliente2, 200);
 
         conta.deposit(300);
         conta.withdraw(100);
         conta.transfer(conta2, 300);
-        conta.viewExtract();
+//        conta.viewExtract();
 
+//        System.out.println(conta.getBalance());
+//        System.out.println(conta2.getBalance());
+
+        Bank banco = new Bank("Labu");
+        banco.openAccount(conta);
+        banco.openAccount(conta2);
+        System.out.println(banco.shearchAccount(1));
+        banco.showAccounts();
+        System.out.println("O patrimonio total do banco '"  + banco.getName() + "' é: "  +banco.calculateHeritage());
 
     }
 }

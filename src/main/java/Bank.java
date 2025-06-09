@@ -10,6 +10,10 @@ public class Bank {
         this.accounts = new ArrayList<>();
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void openAccount(Account account){
         accounts.add(account);
     }
@@ -28,15 +32,17 @@ public class Bank {
             System.out.println("Você não tem contas. Crie contas e volte aqui para visualiza-las!");
         }
         System.out.println("===LISTAGEM DE CONTAS===");
-        for (Account account: accounts){
+        for (Account account : accounts){
             System.out.println("| Conta: " +account.getNumber() + " - Cliente: " + account.getClient());
         }
     }
 
-//    public
-
-
-
-
+    public double calculateHeritage(){
+        double heritage = 0;
+        for (Account account : accounts){
+            heritage += account.getBalance();
+        }
+        return heritage;
+    }
 
 }
