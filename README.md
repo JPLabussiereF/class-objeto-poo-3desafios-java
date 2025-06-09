@@ -358,7 +358,7 @@ public class EmailService {
 
 ## 🏋️ Exercícios
 
-### Exercício 1: Básico - Classe Círculo
+### [Exercício 1: Básico - Classe Círculo](src/main/java/Circle.java)
 Crie uma classe `Circulo` com:
 - **Atributo**: raio (double)
 - **Construtor**: que recebe o raio
@@ -375,7 +375,7 @@ System.out.println("Perímetro: " + c1.calcularPerimetro());
 System.out.println(c1); // Círculo com raio: 5.0
 ```
 
-### Exercício 2: Intermediário - Sistema de Funcionários
+### [Exercício 2: Intermediário - Sistema de Funcionários](src/main/java/Worker.java)
 Crie uma classe `Funcionario` com:
 - **Atributos**: nome, cargo, salarioBase, horasExtras
 - **Construtor**: recebe nome, cargo e salário base
@@ -396,15 +396,15 @@ f1.gerarContracheque();
 ### Exercício 3: Avançado - Sistema Bancário
 Crie um sistema com as classes:
 
-1. **Classe `Cliente`**:
+1. **[Classe `Cliente`](src/main/java/Client.java)**:
     - Atributos: nome, cpf, dataNascimento
     - Métodos: getters, validarCPF(), calcularIdade()
 
-2. **Classe `Conta`**:
+2. **[Classe `Conta`](src/main/java/Account.java)**:
     - Atributos: numero, cliente, saldo, limite, historico
     - Métodos: depositar(), sacar(), transferir(), exibirExtrato()
 
-3. **Classe `Banco`**:
+3. **[Classe `Banco`](src/main/java/Bank.java)**:
     - Atributos: nome, contas (lista)
     - Métodos: abrirConta(), buscarConta(), listarContas(), calcularPatrimonio()
 
