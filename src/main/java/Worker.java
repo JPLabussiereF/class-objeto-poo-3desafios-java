@@ -1,10 +1,10 @@
-public class Funcionario {
+public class Worker {
     private String name;
     private String role;
     private double baseSalary;
     private int extraHours;
 
-    public Funcionario(String name, String role, double baseSalary){
+    public Worker(String name, String role, double baseSalary){
         this.name = name;
         this.role = role;
         this.baseSalary = baseSalary;

@@ -2,12 +2,12 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
-public class Cliente {
+public class Client {
     private String name;
     private String cpf;
     private String dateOfBirth;
 
-    public Cliente(String name, String cpf, String dateOfBirth){
+    public Client(String name, String cpf, String dateOfBirth){
         this.name = name;
         this.cpf = cpf;
         this.dateOfBirth = dateOfBirth;
